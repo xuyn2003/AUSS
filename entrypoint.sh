@@ -1,2 +1,3 @@
 #!/bin/bash
-nohup /usr/local/bin/ssserver "$@"
+nohup /usr/sbin/sshd -D &
+/usr/local/bin/ssserver "$@"
